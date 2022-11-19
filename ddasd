@@ -1,0 +1,536 @@
+[33mcommit d938bfd0d0126f66581db5b26359101cb08cd897[m[33m ([m[1;36mHEAD[m[33m, [m[1;33mtag: v9.3.10[m[33m)[m
+Author: Corné Veldman <cveldman@hotmail.com>
+Date:   Fri Oct 28 15:38:26 2022 +0200
+
+    Changing .env to make Pusher work without editing the commented out part in the bootstrap.js (#6021)
+    
+    * edit file
+    
+    * This works for null, undefined and '', because it's JavaScript
+
+[33mcommit 48e3855963f867733c71fa494f329f55ddd869bf[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Oct 25 16:29:19 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 586b9e7bf5efef4d205552cc285a3f8498767578[m[33m ([m[1;33mtag: v9.3.9[m[33m)[m
+Author: Dominik Rajkowski <dom.rajkowski@gmail.com>
+Date:   Mon Oct 17 16:18:45 2022 +0200
+
+    Add /.fleet directory to .gitignore (#6011)
+
+[33mcommit 1f27a2245b59863ff5db5a8fec9a14932fe363fe[m
+Author: Zep Fietje <hey@zepfietje.com>
+Date:   Mon Oct 17 16:17:59 2022 +0200
+
+    Sort EditorConfig rules (#6012)
+
+[33mcommit 5daa02c70b27212aea4b2e302c4ac5ba65b1e789[m
+Author: Bùi Thế Hạnh <buihanh2304@gmail.com>
+Date:   Tue Oct 11 20:43:53 2022 +0700
+
+    Shorten pusher host config (#6009)
+    
+    * Shorten pusher host config
+    
+    * Update broadcasting.php
+    
+    Co-authored-by: Taylor Otwell <taylor@laravel.com>
+
+[33mcommit 5fb72c0d92ca126f32bf1e850f25f35c48390209[m
+Author: Ankur Kumar <ankurk91@users.noreply.github.com>
+Date:   Mon Oct 10 18:52:38 2022 +0530
+
+    Upgrade axios to v1.x (#6008)
+    
+    https://github.com/axios/axios/releases/tag/v1.0.0
+
+[33mcommit 7f62c14563d835ba6ce1b258a02abc5828083c54[m
+Author: I Putu Bagus Purnama Yasa <yasapurnama@gmail.com>
+Date:   Thu Oct 6 22:02:37 2022 +0800
+
+    ignore .env.production (#6004)
+
+[33mcommit 5138bc36dbc884098ea68942e805b2267e7a627f[m
+Author: Tim MacDonald <hello@timacdonald.me>
+Date:   Wed Oct 5 13:26:47 2022 +1100
+
+    update colours (#6002)
+
+[33mcommit 2f975d75278186498927f7d798af485789cab556[m
+Author: Dries Vints <dries@vints.io>
+Date:   Tue Oct 4 15:48:17 2022 +0200
+
+    Update tests.yml (#6000)
+
+[33mcommit b47c4bc20df5b8adc85c3017014937994fd41448[m
+Author: Dries Vints <dries@vints.io>
+Date:   Tue Oct 4 15:30:48 2022 +0200
+
+    PHP 8.2 build (#5999)
+    
+    * PHP 8.2 build
+    
+    * wip
+    
+    * wip
+
+[33mcommit e87bfd60ed4ca30109aa73c4d23250c113fe75ff[m
+Author: Dries Vints <dries@vints.io>
+Date:   Tue Sep 20 17:01:46 2022 +0200
+
+    Update tests.yml
+
+[33mcommit ff696f4a6619a398c715dc86142a6bffd15173ca[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Sep 20 14:59:49 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 9725129d74ca465f1b27b20a561de3c133fb6a78[m[33m ([m[1;33mtag: v9.3.8[m[33m)[m
+Author: Alex <aleksandrosansan@gmail.com>
+Date:   Tue Sep 20 15:19:54 2022 +0200
+
+    GitHub Workflows security hardening (#5992)
+    
+    * build: harden update-changelog.yml permissions
+    Signed-off-by: Alex <aleksandrosansan@gmail.com>
+    
+    * build: harden tests.yml permissions
+    Signed-off-by: Alex <aleksandrosansan@gmail.com>
+    
+    * Update update-changelog.yml
+    
+    * Update tests.yml
+    
+    Co-authored-by: Dries Vints <dries@vints.io>
+
+[33mcommit 4a73b5d57e518bd907875e97d5261c8546703e79[m
+Author: Julius Kiekbusch <jubeki99@gmail.com>
+Date:   Fri Sep 16 16:18:22 2022 +0200
+
+    Add Laravel Bootcamp to Learning Laravel (#5991)
+    
+    * Add Laravel Bootcamp to Learning Laravel
+    
+    * Update README.md
+
+[33mcommit 1bec4f82cf934fe49f89ad7a5adc70cbd272637f[m
+Author: Luis Parrado <luisprmat@gmail.com>
+Date:   Thu Sep 15 08:15:04 2022 -0500
+
+    Validation added `required_if_accepted` (#5987)
+    
+    Added translation for new validation [`required_if_accepted`](https://github.com/laravel/framework/pull/44035) rule
+
+[33mcommit c1dc4199b83466a3a6a8c70953250b0e2ec70001[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Sep 6 15:58:31 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit ad219e82aa5cb350bc3828d0515820e48210e300[m[33m ([m[1;33mtag: v9.3.7[m[33m)[m
+Author: Martin Ro <martin-ro@users.noreply.github.com>
+Date:   Fri Sep 2 22:10:54 2022 +0800
+
+    Make email unique (#5978)
+    
+    When seeding large amounts of users there is a chance for a duplicate entry SQL error because the email column is unique. https://github.com/laravel/laravel/blob/64e01753985749fab6626a370b27baa8431e74e6/database/migrations/2014_10_12_000000_create_users_table.php#L19
+
+[33mcommit 64e01753985749fab6626a370b27baa8431e74e6[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Aug 30 15:23:27 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 8438ba5d219d2462f20a3dc0748e0a0842679d2b[m[33m ([m[1;33mtag: v9.3.6[m[33m)[m
+Author: Tim MacDonald <hello@timacdonald.me>
+Date:   Mon Aug 29 23:54:18 2022 +1000
+
+    bump the Vite version (#5977)
+
+[33mcommit e5e46b4293104e95afdceb973c1e660541259177[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Aug 23 15:04:04 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit d18332bdeffbb1f4bf0da620d01b3ff26b349623[m[33m ([m[1;33mtag: v9.3.5[m[33m)[m
+Author: Dan Harrin <git@danharrin.com>
+Date:   Mon Aug 22 14:26:36 2022 +0100
+
+    [9.x] feature: `max_digits` and `min_digits` validation translations (#5975)
+    
+    * feature: `max_digits` and `min_digits` validation translations
+    
+    * Update validation.php
+    
+    Co-authored-by: Taylor Otwell <taylor@laravel.com>
+
+[33mcommit e2e25f607a894427d6545f611ad3c8d94d022e9d[m
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Sat Aug 20 12:46:21 2022 -0500
+
+    use except
+
+[33mcommit 7b17f5f32623c2ee75f2bff57a42bb8f180ac779[m
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Sat Aug 20 12:22:43 2022 -0500
+
+    use short closure
+
+[33mcommit c233957734b1353d8952e07c1dae462f8cddc3d4[m
+Author: Masudul Haque Shihab <shihab.gsc10@gmail.com>
+Date:   Sat Aug 20 23:02:56 2022 +0600
+
+    add alt to laravel logo image (#5973)
+
+[33mcommit 57400e95451524c81fae6945c2b63c534ead4a49[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Aug 16 15:06:46 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 858a3ca66286d18144f8548692e8f4ad59338a77[m[33m ([m[1;33mtag: v9.3.4[m[33m)[m
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Aug 15 10:21:08 2022 -0500
+
+    wip
+
+[33mcommit 951c9c85019d211601465c93bf04d9e447626a59[m
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Aug 15 10:20:30 2022 -0500
+
+    wip
+
+[33mcommit dbced6ac8c122280966e807ad93ba63d4798f8bc[m
+Author: Stephen Rees-Carter <stephen@rees-carter.net>
+Date:   Tue Aug 16 01:19:56 2022 +1000
+
+    Add ValidateSignature middleware for ignore params (#5942)
+    
+    * Add ValidateSignature middleware for ignore params
+    
+    * Comment out query parameters by default
+    
+    * Remove leading slash
+    
+    * Update Kernel ValidateSignature middleware path
+
+[33mcommit 4135d5834505e3253e6ff8a68180bf40dfb50112[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Aug 9 15:36:37 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 74dfb6cec4d2c1f6d7e1a1e29e4bc9d610dc7031[m[33m ([m[1;33mtag: v9.3.3[m[33m)[m
+Author: kichetof <kichetof@users.noreply.github.com>
+Date:   Wed Aug 3 15:42:10 2022 +0200
+
+    Validation added `doesnt_end_with` translation (#5962)
+    
+    * Validation added doesnt_end_with translation
+    
+    * fix order
+
+[33mcommit ba8ed9d65d77ce37ee94bd920ec353a0a8ca8c41[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Aug 2 15:06:21 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 3ea3861e4bab0f39322e8ac2ac9ffd8c6481fbe6[m[33m ([m[1;33mtag: v9.3.2[m[33m)[m
+Author: Dries Vints <dries@vints.io>
+Date:   Mon Aug 1 15:54:38 2022 +0200
+
+    Update composer.json (#5959)
+
+[33mcommit 6e1103180b439bf6970b4a50e9e42cc5de9f9bf3[m
+Author: suyar <296399959@qq.com>
+Date:   Fri Jul 29 21:01:11 2022 +0800
+
+    Update laravel/sanctum version (#5957)
+
+[33mcommit 944c87da745bd7ee031d165af18177468d9ae207[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Jul 26 15:27:11 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit ce62296fa91534a394a4037b0fd2a775826c4fbf[m[33m ([m[1;33mtag: v9.3.1[m[33m)[m
+Author: Graham Campbell <GrahamCampbell@users.noreply.github.com>
+Date:   Tue Jul 26 14:05:37 2022 +0100
+
+    [9.x] Don't need to ignore vite config file (#5953)
+    
+    * Don't need to ignore vite config file
+    
+    * Apply fixes from StyleCI
+    
+    Co-authored-by: StyleCI Bot <bot@styleci.io>
+
+[33mcommit 52863d9e4aa41f63592e8c98e5fe717ee7f06a18[m
+Author: Abenet Tamiru <me@abenet.email>
+Date:   Sun Jul 24 02:02:13 2022 +0200
+
+    Update font delivery (#5952)
+    
+    Seeing the non compliance of Google Fonts to GDPR I thought to update the CDN.
+    My non-designer eyes could see no difference on the site.
+
+[33mcommit 1e974481ad7cd643aef9ab0483b9afbeb8b14572[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Jul 19 14:22:59 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit b124ab0fe6f3ab28e58a7aac1ce49095c144d4f7[m[33m ([m[1;33mtag: v9.3.0[m[33m)[m
+Author: Tim MacDonald <hello@timacdonald.me>
+Date:   Wed Jul 20 00:03:41 2022 +1000
+
+    Vite 3 support (#5944)
+
+[33mcommit fa5e54a2ab6b1de8a4cef69b59bcfdecd07ab0cb[m
+Author: Nuno Maduro <enunomaduro@gmail.com>
+Date:   Fri Jul 15 14:38:49 2022 +0100
+
+    [9.x] Uses `laravel/pint` for styling (#5945)
+    
+    * Uses `laravel/pint` for styling
+    
+    * Makes `.styleci.yml` ignored on export
+    
+    * Update composer.json
+    
+    Co-authored-by: Dries Vints <dries@vints.io>
+
+[33mcommit 88419bfc583ecfa6f7ff0c563762fb5a7d70490b[m
+Author: Ankur Kumar <ankurk91@users.noreply.github.com>
+Date:   Thu Jul 14 23:35:03 2022 +0530
+
+    Bump axios version (#5946)
+
+[33mcommit df07877444cee31f1017ad1e57fb58f21ce8603f[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Wed Jul 13 14:23:03 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 3850b46cbe6ee13266abe43375d51980ecadba10[m[33m ([m[1;33mtag: v9.2.1[m[33m)[m
+Author: Jess Archer <jess@jessarcher.com>
+Date:   Wed Jul 13 23:57:43 2022 +1000
+
+     Update to the latest version of laravel-vite-plugin (#5943)
+
+[33mcommit 91f49543af088eedd2f1742623092f3b1b0ff7a0[m
+Author: Jess Archer <jess@jessarcher.com>
+Date:   Thu Jul 7 01:50:30 2022 +1000
+
+    Update to the latest version of laravel-vite-plugin (#5932)
+    
+    The `laravel-vite-plugin` had a pre-1.x major version bump due to a change in the plugin return type.
+
+[33mcommit 1fa6b7dc52f9f7675ff1f8ca82a9a701e64249fa[m
+Author: Tim MacDonald <hello@timacdonald.me>
+Date:   Sat Jul 2 06:41:47 2022 +1000
+
+    add default reloading to skeleton (#5927)
+
+[33mcommit fa4c8c17e052bb864f75344dbb5e63857ee3fe3b[m
+Author: Irsyad A. Panjaitan <irsyadpanjaitan@gmail.com>
+Date:   Sat Jul 2 03:37:51 2022 +0700
+
+    Update bootstrap.js (#5929)
+    
+    Before it was use `VITE_PUSHER_CLUSTER`, it should be `VITE_PUSHER_APP_CLUSTER`.
+
+[33mcommit 3c0c7a0d17a89ce45e49fc2a75ea330051a0a26d[m
+Author: N'Bayramberdiyev <nbayramberdiyev@gmail.com>
+Date:   Fri Jul 1 19:28:34 2022 +0300
+
+    bump actions/checkout (#5928)
+
+[33mcommit 14719d097ab638e508009a9ae1a04bdb887fae32[m
+Author: Dries Vints <dries@vints.io>
+Date:   Thu Jun 30 15:31:18 2022 +0200
+
+    Update .gitignore (#5924)
+
+[33mcommit bb7320563888264e956294fb70ed07b017ddfef1[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Jun 28 14:37:38 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit f46db07ef581dbda69dec3fee8064b87a1db2ead[m[33m ([m[1;33mtag: v9.2.0[m[33m)[m
+Author: Dries Vints <dries@vints.io>
+Date:   Tue Jun 28 16:36:21 2022 +0200
+
+    Update composer.json
+
+[33mcommit d694bc06ccbf66f4f8ce432c39b71deea6766135[m
+Author: rennokki <alex@renoki.org>
+Date:   Fri Jun 24 21:35:29 2022 +0300
+
+    [9.x] Added support for easy development configuration in bootstrap.js (#5900)
+    
+    * Added support for easy development configuration in bootstrap.js
+    
+    * Added extra variables for existing configuration in broadcasting
+    
+    * Update bootstrap.js
+    
+    * Setting default for empty variable
+    
+    * Update .env.example
+    
+    * Update .env.example
+    
+    Co-authored-by: Taylor Otwell <taylor@laravel.com>
+
+[33mcommit 86b4b1b65659a7b0f4b3dad1e753aa1efa5a7642[m
+Author: Jess Archer <jess@jessarcher.com>
+Date:   Thu Jun 23 04:07:47 2022 +1000
+
+    [9.x] Vite (#5904)
+    
+    * Use Vite
+    
+    * Gitignore Vite build directory
+    
+    * Use CSS entry points
+    
+    * Update plugin
+    
+    * Linting
+    
+    * Update plugin
+
+[33mcommit 0c3d1fabe5a9319131aa4e9d74b27f29e74a50fb[m
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Wed Jun 22 11:02:43 2022 -0500
+
+    use global functino
+
+[33mcommit 1f9eee06ddb38abf86e2f7df37a20281cd774e3d[m
+Author: Dries Vints <dries@vints.io>
+Date:   Wed Jun 8 11:02:46 2022 +0200
+
+    Update update-changelog.yml
+
+[33mcommit 2e823dd31bed673730ab49382b305cffd7279c5d[m
+Author: Dries Vints <dries@vints.io>
+Date:   Wed Jun 8 11:02:33 2022 +0200
+
+    Update pull-requests.yml
+
+[33mcommit 3d7b0778d6c9f5573270aa1dda3974294cd2ce56[m
+Author: Farid Aghili <faridaghili@hotmail.com>
+Date:   Tue Jun 7 20:45:24 2022 +0430
+
+    Sorting (#5899)
+    
+    Sort Alphabetically for newly added `doesnt_start_with`.
+
+[33mcommit c5c731a8aa51dc146645c4024b0f34b9dc3a28ac[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue Jun 7 15:20:23 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 93cc51ed00dd84df64ff028bfc31be2165c3dcfe[m[33m ([m[1;33mtag: v9.1.10[m[33m)[m
+Author: Oanh Nguyen <oanhnn.bk@gmail.com>
+Date:   Tue Jun 7 22:03:59 2022 +0700
+
+    [9.x] Improve Pusher configuration for easy development (#5897)
+    
+    * Improve Pusher configuration for easy development
+    
+    * Fix style-ci
+
+[33mcommit b084aacc5ad105e39c2b058e9523e73655be8d1f[m
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Tue Jun 7 10:03:18 2022 -0500
+
+    add language line
+
+[33mcommit bb0de1f14803b7ad2c05914e03f2f439ef69c320[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue May 31 15:19:55 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 2e3563d9aa0ad4ff46412c51d70ab6b8c5e80068[m[33m ([m[1;33mtag: v9.1.9[m[33m)[m
+Author: Jess Archer <jess@jessarcher.com>
+Date:   Sat May 28 10:36:33 2022 +1000
+
+    Switch to ESM imports (#5895)
+    
+    This improves the transition for Vite users.
+
+[33mcommit 8d3a964edc67125f336f14ccfca31b62623bca65[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue May 10 15:38:08 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 7216fa7e9a797227f303630d937a0722878b753b[m[33m ([m[1;33mtag: v9.1.8[m[33m)[m
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Thu May 5 14:52:23 2022 -0500
+
+    a few wording changes
+
+[33mcommit 5c5a300bfd83cd3432eb342fdabf2b85bfaee4bd[m
+Author: Dries Vints <dries@vints.io>
+Date:   Thu May 5 15:53:49 2022 +0200
+
+    [9.x] Add specific test user in seeder (#5879)
+    
+    * Update DatabaseSeeder.php
+    
+    * formatting
+    
+    Co-authored-by: Taylor Otwell <taylor@laravel.com>
+
+[33mcommit 14b6505bbabe0a5dede5a853508ca61fa35781cd[m
+Author: Bram in 't Zandt <bintzandt@users.noreply.github.com>
+Date:   Wed May 4 16:05:31 2022 +0200
+
+    Update mail.php (#5877)
+    
+    Add `local_domain` as an option to the smtp configuration. This can be used to change the domain that is used to send the `EHLO` command during the SMTP handshake.
+    
+    `null` is a sensible default since Symfony/Mailer will use it's own default (`127.0.0.1`) to send the mail.
+    
+    Co-authored-by: Bram in 't Zandt <bram@bigspark.com>
+
+[33mcommit ffd790eae1e0a5bf3e64ca1ef09005446a89d4d6[m
+Author: driesvints <driesvints@users.noreply.github.com>
+Date:   Tue May 3 15:52:34 2022 +0000
+
+    Update CHANGELOG
+
+[33mcommit 5840c98d8fde042efd8652f053d8e879a736ed3b[m[33m ([m[1;33mtag: v9.1.7[m[33m)[m
+Author: Dries Vints <dries@vints.io>
+Date:   Tue May 3 17:51:16 2022 +0200
+
+    Bump minimum Laravel version
+
+[33mcommit 62cb9052cdf0c399d1287ea38752864bc9a24f29[m
+Author: Dries Vints <dries@vints.io>
+Date:   Tue May 3 16:31:17 2022 +0200
+
+    Update logging.php (#5874)
+
+[33mcommit f662352123ab7c52965726a8ecf78e034ec5b7cc[m
+Author: Dries Vints <dries@vints.io>
+Date:   Mon May 2 16:11:15 2022 +0200
+
+    [9.x] Run tests for skeleton (#5873)
+    
+    * Run tests for skeleton
+    
+    * wip
+    
+    * wip
